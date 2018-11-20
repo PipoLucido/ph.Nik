@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(img/pexels-photo-1002636.jpeg);
+    max-width: 200%;
+    height: auto;
+    background-position-x: 50%;
+    background-position-y: 40%;
+}
+
+.titulo{
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 90px;
+    
+}
+
+.textos{
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.textosm{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    display: none;
+    color: beige;
+    text-align: center;
+}
+
+.link{
+    cursor: pointer;
+}
+
+.link:hover{
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+
+
+    @-webkit-keyframes pulse {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    }
+    @keyframes pulse {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    } 
+
+.cuadradosGiratorios{
+    width: 650px;
+    right: 0;
+    padding-left: 55px;
+
+}
+
+.galeria{
+    position: absolute;
+    top: 80px;
+    left: 220px;
+    z-index: -1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mySlides {
+    display:none;
+}
+
+.byrons{
+    position: absolute;
+    font-family: 'Inconsolata', monospace;
+    
+    bottom: -25px;
+    right:15px;
+}
+
+.mobil{
+    color: beige;
+    display: none;
+    text-shadow: 15px;
+}
+
+@media (max-width: 600px) {
+    .textos{
+        display: none;
+    }
+
+    .galeria{
+        display: none;
+    }
+
+    .byrons{
+        display: none;
+    }
+
+    .cuadradosGiratorios{
+        display: none;
+    }
+
+    .titulo{
+        display: none;
+    }
+    .mobil{
+        
+        display: block;
+    }
+
+    .textosm{
+        
+        display: block;
+        
+    }
+
+    body{
+        background-image: url(img/pexels-photo-733853.jpeg);
+        
+    }
+
+  }
